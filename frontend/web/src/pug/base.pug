@@ -1,0 +1,54 @@
+//- module
+doctype html
+html
+  block vars
+  head
+    meta(charset="utf-8")
+    block prehead
+    link(rel="icon",type="image/x-icon",href="/favicon.ico")
+    link(rel="preconnect",href="https://fonts.googleapis.com")
+    link(rel="preconnect",href="https://fonts.gstatic.com",crossorigin)
+    +css([
+      {name: "bootstrap", path: "dist/css/bootstrap.min.css"},
+      {name: "@loadingio/bootstrap.ext"},
+      {name: "@loadingio/loading.css", path: "lite.min.css"},
+      {name: "ldiconfont"},
+      {name: "ldloader"},
+      {name: "ldcover"},
+      {name: "ldcover", path: "ldcv.effects.min.css"},
+      {name: "ldnotify"},
+      {name: "ldbutton"}
+    ])
+    block head
+    script if(/MSIE|Trident/.exec(navigator.userAgent)) { window.location.href = "/err/ie/" };
+  body
+    block body
+    +script([
+      {name: "i18next", path: "dist/umd/i18next.min.js"},
+      {name: "i18next-browser-languagedetector", path: "dist/umd/i18nextBrowserLanguageDetector.min.js"},
+      {name: "bootstrap.native", path: "dist/bootstrap-native-v4.min.js"},
+      {name: "proxise"},
+      {name: "@loadingio/debounce.js"},
+      {name: "@loadingio/ldquery"},
+      {name: "@loadingio/ldc"},
+      {name: "zmgr"},
+      {name: "ldview"},
+      {name: "ldcover"},
+      {name: "ldnotify"},
+      {name: "ldcvmgr"},
+      {name: "lderror"},
+      {name: "ldloader"},
+      {name: "@plotdb/httputil"},
+      {name: "@plotdb/semver"},
+      {name: "@plotdb/rescope"},
+      {name: "@plotdb/csscope"},
+      {name: "@plotdb/block"},
+      {name: "@servebase/auth"},
+      {name: "@servebase/consent"},
+      {name: "@servebase/captcha"},
+      {name: "@servebase/erratum"},
+      {name: "@servebase/core"},
+      {name: "@servebase/connector"},
+      {name: "@servebase/navtop"},
+    ])
+    block script

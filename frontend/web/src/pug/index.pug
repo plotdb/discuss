@@ -1,0 +1,10 @@
+extends /base.pug
+block body
+  .w-1024.rwd.mx-auto.my-4
+    h1 hi
+    textarea.form-control.mb-4(ld="edit",row="5")
+    .btn.btn-outline-secondary(ld="post") Post
+    hr
+    .border.mb-4.p-4(ld-each="comment")
+block script
+  script(type="module"): include:lsc index.ls

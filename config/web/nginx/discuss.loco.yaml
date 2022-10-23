@@ -1,0 +1,9 @@
+name: discuss
+ip: 127.0.0.1
+port: 8904
+hostname: discuss.loco
+root: /Users/tkirby/workspace/plotdb/projects/discuss/frontend/web/static/
+cert:
+  crt: /Users/tkirby/workspace/devsuite/cert/discuss.loco/server.crt
+  key: /Users/tkirby/workspace/devsuite/cert/discuss.loco/server.key
+nginxCfgDir: /opt/homebrew/etc/nginx

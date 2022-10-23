@@ -1,10 +1,8 @@
-require! <[fs path lderror @plotdb/suuid @grantdash/dashlib]>
+require! <[fs path lderror @plotdb/suuid]>
 require! <[@servebase/backend/throttle @servebase/backend/aux]>
 
 (backend) <- (->module.exports = it)  _
 <-(->it.apply backend) _
-
-lib = dashlib backend
 
 {db,config,route:{api,app},session} = @
 
